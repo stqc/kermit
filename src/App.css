@@ -6,32 +6,6 @@
 body{
   background:  #427B10;
 }
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 
 nav{
   display: flex;
@@ -76,6 +50,11 @@ font-style: normal;
   border-radius: 15px;
   cursor: pointer;
 }
+.buttons>div:nth-child(2){
+  color:white;
+  background-color: transparent;
+  border: 4px solid white
+}
 .secondary{
   padding: 0% 12%;
   font-size: 1.2rem;
@@ -105,7 +84,6 @@ footer{
   }
   .main-content>.img>img{
     width:100%;
-    float: center;
   }
   .secondary{
     padding: 0% 2%;
@@ -113,13 +91,36 @@ footer{
 
   footer{
     flex-direction: column;
+    margin-top: 20%;
   }
-  
+    .img{
+      order:1;
+      margin-top: 10%;
+    }
+    .main_{
+      order:2;
+      margin-top: 10%;
+      text-align: center ;
+    }
+    .buttons{
+      margin-top: 10%;
+    }
+    .buttons>div:nth-child(2){
+      margin-top: 4%;
+    }
+  .secondary{
+    margin-top: 10%;
+  }
+
 }
 
 @media screen and (max-width:420px) {
+  .title{
+    display: none;
+  }
   .buttons{
     flex-direction: column;
     text-align: center;
   }
+
 }

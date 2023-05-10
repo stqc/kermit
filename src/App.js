@@ -17,7 +17,10 @@ function App() {
           Kermit
         </div>
         <div style={{maxHeight:"200px", maxWidth:"200px", marginLeft:"auto"}}>
-          <img src={twitter} width="50%" height="50%" style={{cursor:"pointer"}}/>
+          <img src={twitter} width="50%" height="50%" style={{cursor:"pointer"}}
+          onClick={()=>{
+            window.open("https://twitter.com/KermitTheETH");
+          }}/>
           <img src={tg} width="50%" height="50%" style={{cursor:"pointer"}} onClick={()=>{
             window.open(
 "//t.me/Kermitsoneth")
@@ -25,11 +28,10 @@ function App() {
         </div>
       </nav>
       <div className='main-content'>
-          <div>
+          <div className="main_">
             <div>$KERMIT</div>
-            <div style={{fontWeight:400, marginTop:"2%"}}>The most versatile memecoin in the
-universe. Dogs are getting rekt!</div>
-<div style={{marginTop:"2%"}}>But that’s none of my business.</div>
+            <div style={{fontWeight:400, marginTop:"2%"}}>Swap, or no Swap.</div>
+<div style={{marginTop:"2%"}}>that’s none of my business.</div>
   <div className='buttons'>
       <div>
         Buy $KERMIT
@@ -48,7 +50,7 @@ universe. Dogs are getting rekt!</div>
       Kermit was crowned King of the Muppets after defeating his arch-nemesis, Constantine.
 With Miss Piggy by his side, he ruled over the kingdom with fairness and kindness, always putting the needs of his fellow Muppets first.
 And the people rejoiced, for they knew that with Kermit as their king, they were in good hands.
-
+<br/><br/>
 Now, Kermit is here to generate you enough wealth to buy your own swamp.
       </div>
       <footer>
