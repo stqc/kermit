@@ -30,14 +30,14 @@ function App() {
       <div className='main-content'>
           <div className="main_">
             <div>$KERMIT</div>
-            <div style={{fontWeight:400, marginTop:"2%"}}>Swap, or no Swap.</div>
-<div style={{marginTop:"2%"}}>that’s none of my business.</div>
+            <div style={{fontWeight:400, marginTop:"2%"}}>Swamp, or no Swamp.</div>
+<div style={{marginTop:"2%"}}>But that’s none of my business.</div>
   <div className='buttons'>
       <div>
-        Buy $KERMIT
+        BUY $KERMIT
       </div>
       <div>
-        Chart
+        CHART
       </div>
   </div>
           </div>
