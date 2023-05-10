@@ -1,7 +1,11 @@
 .App {
   text-align: center;
-}
+  color: white;
 
+}
+body{
+  background:  #427B10;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -28,11 +32,94 @@
   color: #61dafb;
 }
 
+
+nav{
+  display: flex;
+  padding: 2%;
+  max-height: 50px;
+  background:  #427B10;
+  align-items: center;
+  box-shadow: 0px 1px 10px black;
+}
+
+.title{
+  font-weight: 700;
+  font-size: 2rem;
+  font-family: 'Inter' sans-serif;
+font-style: normal;
+}
+
+.main-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2% 2% 0% 2%;
+  padding: 2% 4%;
+  font-family: 'Inter' sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: left;
+}
+.img>img{
+  float: right;
+}
+
+.buttons{
+  display: flex;
+  margin-top: 2%;
+}
+.buttons>div{
+  margin: 1%;
+  color: #427B10;
+  background-color: white;
+  padding: 1%;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.secondary{
+  padding: 0% 12%;
+  font-size: 1.2rem;
+}
+footer{
+  display: flex;
+  max-height: 100px;
+  padding: 2% 2% 0% 2%;
+  justify-content: center;
+  align-items: center;
+  
+  margin-top: 5%;
+
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width:900px) {
+  .main-content{
+    grid-template-columns: 1fr;
+  }
+  .main-content>.img>img{
+    width:100%;
+    float: center;
+  }
+  .secondary{
+    padding: 0% 2%;
+  }
+
+  footer{
+    flex-direction: column;
+  }
+  
+}
+
+@media screen and (max-width:420px) {
+  .buttons{
+    flex-direction: column;
+    text-align: center;
   }
 }
