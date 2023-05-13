@@ -33,10 +33,16 @@ function App() {
             <div style={{fontWeight:400, marginTop:"2%"}}>Swamp, or no Swamp.</div>
 <div style={{marginTop:"2%"}}>But that’s none of my business.</div>
   <div className='buttons'>
-      <div>
+      <div onClick={
+        ()=>{
+          window.open("https://app.uniswap.org/#/swap?inputCurrency=0xfe625Bb2D2a0f24aCE72aDc3365f203771495e39");
+        }
+      }>
         BUY $KERMIT
       </div>
-      <div>
+      <div onClick={()=>{
+        window.open("https://dexscreener.com/ethereum/0x3fa0d2fb8ec605447da6b7b54cda8d8e3dfff22f");
+      }}>
         CHART
       </div>
   </div>
